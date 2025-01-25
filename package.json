@@ -1,0 +1,17 @@
+{
+  "name": "init-me-seed",
+  "private": true,
+  "version": "1.0.0",
+  "description": "init-me-seed 种子管理",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "u": "yarn upgrade-interactive --latest",
+    "l": "cd packages/init-me && npm link --force",
+    "d": "lerna run d",
+    "prettier": "lerna run prettier"
+  },
+  "author": "",
+  "license": "ISC"
+}
