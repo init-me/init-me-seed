@@ -26,7 +26,7 @@
   "license": "ISC",
   "dependencies": {
     "init-me-seed-types": "^2.1.1",
-    "init-me-helper": "^2.1.1"
+    "init-me-helper": "^2.1.5"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
