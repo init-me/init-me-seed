@@ -1,7 +1,7 @@
 {
   "name": "init-me-seed",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "init-me-seed 种子管理",
   "workspaces": [
     "packages/*"
