@@ -2212,7 +2212,7 @@ inherits@2, inherits@^2.0.3, inherits@^2.0.4:
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-init-me-helper@^2.1.5:
+init-me-helper@^2.1.1, init-me-helper@^2.1.5:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/init-me-helper/-/init-me-helper-2.1.5.tgz#4fb4627978c321f4c98b363ec8037558a7b2167a"
   integrity sha512-86Pkn9Cl9tWoEpQQ6tgGZpOToearn5NjstzjIELlNR59QexoW7Q5roT4BcTMQyy8gfdZO163gVbhcQFJdQpOBA==
@@ -4136,6 +4136,11 @@ yyl-cmd-logger@^0.2.1:
   dependencies:
     "@types/node" "^15.3.0"
     chalk "^4.1.0"
+
+yyl-fs@0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/yyl-fs/-/yyl-fs-0.3.3.tgz#aa409a5ea451cd0da287315665f338b1a24d4324"
+  integrity sha512-3I+zY97ZJz91whuiBcdv3qdTQzErI8Dm2YSfJNK3XIAXmzWOSj1nSf6x59KrG4buzIaS3t2LEHVq4kPSYqu/9Q==
 
 yyl-os@0.14.4:
   version "0.14.4"

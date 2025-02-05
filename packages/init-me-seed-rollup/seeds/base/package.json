@@ -1,0 +1,48 @@
+{
+  "name": "__data('name')",
+  "version": "0.1.0",
+  "description": "init-me seed __data('name')",
+  "keywords": [
+    "__data('name')"
+  ],
+  "files": [
+    "output"
+  ],
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "scripts": {
+    "eslint": "eslint ./",
+    "prettier": "prettier --write ./",
+    "dev": "rollup --config ./rollup.config.js --bundleConfigAsCjs",
+    "d": "yarn clear && yarn dev",
+    "build": "yarn clear && cross-env NODE_ENV=production rollup --config ./rollup.config.js --bundleConfigAsCjs",
+    "w": "rollup --watch --config ./rollup.config.js --bundleConfigAsCjs",
+    "clear": "rimraf ./output",
+    "prepublishOnly": "yarn prettier && yarn build && yarn doc",
+    "test": "jest ./test",
+    "doc": "yarn doc:build && yarn doc:concat && yarn doc:clear",
+    "doc:build": "typedoc",
+    "doc:concat": "concat-md --decrease-title-levels --hide-anchor-links docs > README.md",
+    "doc:clear": "rimraf ./docs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-buble": "1.0.3",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/react": "^19.0.8",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.18.0",
+    "eslint-config-yyl-react": "^5.0.5",
+    "prettier": "^3.4.2",
+    "rimraf": "^4.1.2",
+    "rollup": "^4.31.0",
+    "rollup-plugin-image-files": "^1.4.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.7.3"
+  }
+}
