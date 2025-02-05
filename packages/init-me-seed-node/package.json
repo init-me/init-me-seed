@@ -35,5 +35,6 @@
     "jest": "^29.7.0",
     "prettier": "^3.4.2",
     "ts-jest": "^29.0.1"
-  }
+  },
+  "gitHead": "e45c6ec69d2847141f31d495e72e3ca871bccd26"
 }
