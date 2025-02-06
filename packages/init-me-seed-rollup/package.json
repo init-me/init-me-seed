@@ -5,11 +5,12 @@
   "main": "output/index.js",
   "types": "output/index.d.ts",
   "scripts": {
+    "prebuild": "ts-node ./prebuild.ts",
     "eslint": "eslint ./",
     "prettier": "prettier --write ./",
-    "d": "tsc",
+    "d": "npm run prebuild && tsc",
     "w": "tsc --watch",
-    "prepublishOnly": "yarn prettier && yarn d",
+    "prepublishOnly": "npm run prettier && npm run d",
     "test": "jest ./test"
   },
   "engines": {
