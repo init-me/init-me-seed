@@ -8,4 +8,7 @@ const seed: InitMeSeed.Config = initSeedConfig({
   path: SEED_PATH
 })
 
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = seed
+}
 export default seed
