@@ -19,7 +19,7 @@ function buildBanner(type) {
 const IS_PUBLISH = process.env.NODE_ENV === 'production'
 
 const config = {
-  input: './src/index.tsx',
+  input: './src/index.ts',
   output: [],
   plugins: [
     nodeResolve({ mainFields: ['jsnext:main'] }),
@@ -29,12 +29,7 @@ const config = {
       typescript: ts
     })
   ],
-  external: [
-    '@yy/h5service-parser-web',
-    'react',
-    '@yy/yycom-gongping-chatlist-arranger',
-    'animated-scroll-to'
-  ]
+  external: []
 }
 /** @type {import('rollup').RollupOptions} */
 export default [
