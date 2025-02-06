@@ -1,5 +1,5 @@
 {
-  "name": "seed-node-base",
+  "name": "init-me-seed-node__base",
   "private": true,
   "version": "0.1.0",
   "main": "output/index.js",

@@ -2,7 +2,7 @@ import { projcetToSeed, cmdLogger } from 'init-me-helper'
 import path from 'path'
 const context = __dirname
 const seedParams = ['../seed-node-base'].map((iPath) => {
-  const dirname = path.basename(iPath).replace(/^seed-node-/, '')
+  const dirname = path.basename(iPath).replace(/^init-me-seed-node__/, '')
   return {
     context,
     from: iPath,

@@ -2630,23 +2630,23 @@ inherits@2, inherits@^2.0.3, inherits@^2.0.4:
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-init-me-helper@^2.1.1, init-me-helper@^2.1.5:
-  version "2.1.5"
-  resolved "https://registry.npmjs.org/init-me-helper/-/init-me-helper-2.1.5.tgz"
-  integrity sha512-86Pkn9Cl9tWoEpQQ6tgGZpOToearn5NjstzjIELlNR59QexoW7Q5roT4BcTMQyy8gfdZO163gVbhcQFJdQpOBA==
+init-me-helper@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/init-me-helper/-/init-me-helper-2.1.7.tgz#4cdba117b2d2ea4fcf83505242ed4555a3f915d6"
+  integrity sha512-sXlBQQIQMgR7+PTR2/y8FLfSGLz/dwG02VW614tRl9s6yM69rZOQtI02lOQ8sPszx1kSV7VrnFtDccv0oWGQbA==
   dependencies:
     "@types/inquirer" "^8.2.4"
-    init-me-seed-types "^2.1.1"
+    init-me-seed-types "^2.1.7"
     inquirer "^8.2.4"
     typescript "^5.7.3"
     yyl-os "0.14.4"
     yyl-print "0.9.2"
     yyl-replacer "0.3.1"
 
-init-me-seed-types@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/init-me-seed-types/-/init-me-seed-types-2.1.1.tgz"
-  integrity sha512-d3MfSR6eENu6ua/oOR4gUDYr3Dc1Wx+NrLaRNaUMmiEOlXdhGd9bdvBwG0BI7lXYXxDcw+an3Juol3HWWuo52A==
+init-me-seed-types@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/init-me-seed-types/-/init-me-seed-types-2.1.7.tgz#5bb0d6766ecac2c6e61ea58e6289c0b5d3ad0f1d"
+  integrity sha512-FxuXrFvmLbZYfIG6Nt2oeWAS7DCPJi3jsfLvLYLHc55wF/n1azlAJiwyf+UjCEc+rMCQmwjvaOa/PXHKaHrozw==
   dependencies:
     yyl-cmd-logger "^0.2.1"
 
