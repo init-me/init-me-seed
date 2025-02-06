@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "ES6",
+    "module": "CommonJS",
+    "strict": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "es2015", "scripthost"],
+    "rootDir": "src",
+    "outDir": "./output",
+    "declarationDir": "./output",
+    "declaration": true
+  },
+  "include": ["src/**/*", "src/lib/ci/ci.ts"],
+  "exclude": ["output"]
+}

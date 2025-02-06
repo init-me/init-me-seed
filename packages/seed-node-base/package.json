@@ -1,0 +1,46 @@
+{
+  "name": "seed-node-base",
+  "private": true,
+  "version": "0.1.0",
+  "main": "output/index.js",
+  "types": "output/index.d.ts",
+  "bin": {
+    "mb": "bin.js",
+    "mini-bat": "bin.js"
+  },
+  "maintainers": [],
+  "scripts": {
+    "bootstrap": "echo '手动执行 npm install'",
+    "eslint": "eslint ./",
+    "prettier": "prettier --write ./",
+    "dev": "tsc",
+    "d": "tsc",
+    "build": "tsc",
+    "w": "tsc -w",
+    "prepublishOnly": "npm run prettier && npm run test && npm run doc",
+    "doc": "npm run doc:build && npm run doc:concat && npm run doc:clear",
+    "doc:build": "typedoc",
+    "doc:concat": "concat-md --decrease-title-levels ----start-title-level-at 1 --hide-anchor-links docs > README.md",
+    "doc:clear": "rimraf ./docs",
+    "test": "npm run build & jest ./test/jest/",
+    "test1": "node ./test/base/index"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "cross-env": "^7.0.3",
+    "concat-md": "^0.5.1",
+    "eslint": "^9.18.0",
+    "eslint-config-yyl-node": "^5.0.5",
+    "jest": "^29.5.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.2.5",
+    "typedoc": "^0.27.6",
+    "typedoc-plugin-markdown": "^4.4.1",
+    "typedoc-plugin-merge-modules": "^6.1.0",
+    "typescript": "^5.7.3"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "gitHead": "a7b12cfc4aa2c1927ff8975f0c5770914e68a0b8"
+}
