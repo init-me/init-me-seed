@@ -1,9 +1,10 @@
-import pkg from './package.json'
+import pkg from './package.json' assert { type: 'json' }
 import typescript from 'rollup-plugin-typescript2'
 import commonjs from '@rollup/plugin-commonjs'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import json from '@rollup/plugin-json'
 import terser from '@rollup/plugin-terser'
+import ts from 'typescript'
 
 function buildBanner(type) {
   return [
@@ -25,7 +26,7 @@ const config = {
     commonjs(),
     json(),
     typescript({
-      typescript: require('typescript')
+      typescript: ts
     })
   ],
   external: [
@@ -35,7 +36,7 @@ const config = {
     'animated-scroll-to'
   ]
 }
-
+/** @type {import('rollup').RollupOptions} */
 export default [
   {
     input: config.input,

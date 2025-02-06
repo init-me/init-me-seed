@@ -1,16 +1,18 @@
-import pkg from './package.json'
+import pkg from './package.json' assert { type: 'json' }
 import typescript from 'rollup-plugin-typescript2'
 import commonjs from '@rollup/plugin-commonjs'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import json from '@rollup/plugin-json'
 import terser from '@rollup/plugin-terser'
+import ts from 'typescript'
+
 import postcss from 'rollup-plugin-postcss'
-import autoprefixer from 'autoprefixer'
-import postcssReporter from 'postcss-reporter'
-import pxtorem from 'postcss-pxtorem'
 import images from 'rollup-plugin-image-files'
 import url from 'postcss-url'
 import sass from 'sass'
+import postcssReporter from 'postcss-reporter'
+import pxtorem from 'postcss-pxtorem'
+import autoprefixer from 'autoprefixer'
 
 function buildBanner(type) {
   return [
@@ -59,7 +61,7 @@ const config = {
     commonjs(),
     json(),
     typescript({
-      typescript: require('typescript')
+      typescript: ts
     }),
     images({ dir: './output/images' })
   ],
@@ -70,7 +72,7 @@ const config = {
     'animated-scroll-to'
   ]
 }
-
+/** @type {import('rollup').RollupOptions} */
 export default [
   {
     input: config.input,
