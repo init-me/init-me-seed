@@ -1,5 +1,6 @@
 {
-  "name": "__data('name')",
+  "name": "init-me-seed-rollup__base",
+  "private": true,
   "version": "0.1.0",
   "description": "init-me seed __data('name')",
   "keywords": [

@@ -1,6 +1,7 @@
 import { projcetToSeed, cmdLogger } from 'init-me-helper'
 import path from 'path'
 import fs from 'fs'
+import chalk from 'chalk'
 const context = __dirname
 
 const seedPrefix = 'init-me-seed-node__'
@@ -10,16 +11,19 @@ const seedParams = fs
   .filter((dirname) => {
     return dirname.startsWith(seedPrefix)
   })
-  .map((iPath) => {
-    const dirname = path.basename(iPath).replace(seedPrefix, '')
+  .map((dirname) => {
+    const nextDirname = dirname.replace(seedPrefix, '')
+    const from = path.join(context, '../', dirname)
     return {
       context,
-      from: iPath,
-      to: `./seeds/${dirname}`
+      from,
+      to: `./seeds/${nextDirname}`
     }
   })
 
-cmdLogger.log('info', ['开始初始化项目中 seed 文件'])
+cmdLogger.log('info', [
+  `开始初始化项目中 ${chalk.cyan('seed')} 文件, 共 ${chalk.green(seedParams.length)} 个种子文件.`
+])
 const pms: Promise<string[]>[] = []
 seedParams.forEach((params) => {
   pms.push(
