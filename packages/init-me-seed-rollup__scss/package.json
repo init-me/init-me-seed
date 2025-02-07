@@ -1,7 +1,7 @@
 {
   "name": "init-me-seed-rollup__scss",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "init-me seed __data('name')",
   "keywords": [
     "__data('name')"
