@@ -1,7 +1,7 @@
 {
   "name": "init-me-seed-node__base",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "output/index.js",
   "types": "output/index.d.ts",
   "bin": {

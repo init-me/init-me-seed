@@ -1,7 +1,7 @@
 {
   "name": "init-me-seed-vite__base",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.3",
   "type": "module",
   "scripts": {
     "eslint": "eslint ./",
@@ -22,8 +22,8 @@
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.19.0",
     "eslint-config-yyl-react": "^5.0.5",
-    "prettier": "^3.4.2",
     "globals": "^15.14.0",
+    "prettier": "^3.4.2",
     "typescript": "~5.7.2",
     "vite": "^6.1.0"
   }
