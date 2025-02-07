@@ -6,6 +6,7 @@
   "scripts": {
     "eslint": "eslint ./",
     "prettier": "prettier --write ./",
+    "d": "npm run build",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
