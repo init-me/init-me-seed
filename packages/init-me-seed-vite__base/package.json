@@ -1,7 +1,7 @@
 {
   "name": "init-me-seed-vite__base",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.7",
   "type": "module",
   "scripts": {
     "eslint": "eslint ./",
