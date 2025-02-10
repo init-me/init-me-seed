@@ -1,6 +1,6 @@
 {
   "name": "init-me-seed-rollup",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "init-me seed init-me-seed-rollup",
   "main": "output/index.js",
   "types": "output/index.d.ts",
@@ -34,7 +34,7 @@
     "eslint": "^9.19.0",
     "eslint-config-yyl-node": "^5.0.5",
     "init-me-seed-rollup__base": "^1.0.4",
-    "init-me-seed-rollup__scss": "^1.0.4",
+    "init-me-seed-rollup__scss": "^1.0.9",
     "jest": "^29.7.0",
     "prettier": "^3.4.2",
     "ts-jest": "^29.0.1",
